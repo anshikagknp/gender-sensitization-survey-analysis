@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/repository_banner.png" alt="Perspectives on Gender Sensitization" width="100%"/>
-</p>
-
 <h1 align="center">Perspectives on Gender Sensitization</h1>
 <p align="center">A Kanpur-Based Quantitative Study · Full Analytics Lifecycle</p>
 
@@ -146,10 +142,6 @@ gender-sensitization-survey-analysis/
 │   ├── architecture.md         # Project architecture & data flow
 │   ├── dashboard_spec.md       # Dashboard design spec
 │   └── research_paper_portfolio.pdf
-│
-├── assets/
-│   ├── repository_banner.png
-│   └── repository_logo.png
 │
 ├── requirements.txt
 ├── CITATION.cff
