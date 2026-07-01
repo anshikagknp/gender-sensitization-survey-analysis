@@ -1,12 +1,8 @@
-<p align="center">
-  <img src="assets/repository_banner.png" alt="Perspectives on Gender Sensitization" width="100%"/>
-</p>
 
-<h1 align="center">Perspectives on Gender Sensitization</h1>
-<p align="center">A Kanpur-Based Quantitative Study · Full Analytics Lifecycle</p>
+<h1 align="center">Survey Analysis: Perspectives on Gender Sensitization</h1>
+<p align="center">Quantitative Study in Python · Full Analytics Lifecycle</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-completed-lightgrey" alt="status"/>
   <img src="https://img.shields.io/badge/sample%20size-n%3D100-lightgrey" alt="sample"/>
   <img src="https://img.shields.io/badge/synthetic%20dataset-1%2C000%20rows-lightgrey" alt="synthetic"/>
   <img src="https://img.shields.io/badge/Python-3.9%2B-lightgrey" alt="python"/>
@@ -22,13 +18,11 @@
 
 ---
 
-## What this is
+## What is this?
 
 A quantitative social research project measuring gender sensitization awareness among 100 young respondents (18–35) in Kanpur, India — restructured here as an **end-to-end data analytics case study**. Covers survey design → primary data collection → cleaning → exploratory and statistical analysis → visualization → key findings.
 
-> **Original academic work:** MA Political Science dissertation, Christ Church College, Kanpur (CSJM University), 2023–24.
-> **Supervisor:** Vibha Dikshit, Associate Professor, Department of Political Science.
-
+> **Original academic work:** MA Political Science dissertation, Christ Church College, Kanpur, 2023–24.
 ---
 
 ## Highlights
