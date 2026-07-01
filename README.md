@@ -1,32 +1,32 @@
 <p align="center">
-  <h1 align="center">Perspectives on Gender Sensitization</h1>
-  <p align="center">A Kanpur-Based Quantitative Study · Full Analytics Lifecycle</p>
+  <img src="assets/repository_banner.png" alt="Perspectives on Gender Sensitization" width="100%"/>
 </p>
 
+<h1 align="center">Perspectives on Gender Sensitization</h1>
+<p align="center">A Kanpur-Based Quantitative Study · Full Analytics Lifecycle</p>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/status-completed-brightgreen" alt="status"/>
-  <img src="https://img.shields.io/badge/sample%20size-n%3D100-informational" alt="sample"/>
-  <img src="https://img.shields.io/badge/synthetic%20dataset-1%2C000%20rows-blueviolet" alt="synthetic"/>
-  <img src="https://img.shields.io/badge/Power%20BI-dashboard-F2C811?logo=powerbi&logoColor=black" alt="powerbi"/>
-  <img src="https://img.shields.io/badge/Tableau-dashboard-E97627?logo=tableau&logoColor=white" alt="tableau"/>
-  <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white" alt="python"/>
+  <img src="https://img.shields.io/badge/status-completed-lightgrey" alt="status"/>
+  <img src="https://img.shields.io/badge/sample%20size-n%3D100-lightgrey" alt="sample"/>
+  <img src="https://img.shields.io/badge/synthetic%20dataset-1%2C000%20rows-lightgrey" alt="synthetic"/>
+  <img src="https://img.shields.io/badge/Python-3.9%2B-lightgrey" alt="python"/>
   <img src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey" alt="license"/>
 </p>
 
 <p align="center">
-  <a href="PROJECT_SHOWCASE.md">Portfolio Summary</a> ·
-  <a href="dashboard_layout.md">Dashboard Spec</a> ·
-  <a href="ROADMAP.md">Roadmap</a> ·
-  <a href="#-quick-start">Quick Start</a>
+  <a href="docs/executive_summary.md">Executive Summary</a> ·
+  <a href="docs/dashboard_spec.md">Dashboard Spec</a> ·
+  <a href="docs/architecture.md">Architecture</a> ·
+  <a href="#quick-start">Quick Start</a>
 </p>
 
 ---
 
 ## What this is
 
-A quantitative social research project measuring gender sensitization awareness among 100 young respondents (18–35) in Kanpur, India — restructured here as a **end-to-end data analytics case study**. Covers survey design → primary data collection → frequency analysis → interactive BI dashboards → policy recommendations.
+A quantitative social research project measuring gender sensitization awareness among 100 young respondents (18–35) in Kanpur, India — restructured here as an **end-to-end data analytics case study**. Covers survey design → primary data collection → cleaning → exploratory and statistical analysis → visualization → key findings.
 
-> **Original academic work:** MA Political Science dissertation, Christ Church College, Kanpur (CSJM University), 2023–24.  
+> **Original academic work:** MA Political Science dissertation, Christ Church College, Kanpur (CSJM University), 2023–24.
 > **Supervisor:** Vibha Dikshit, Associate Professor, Department of Political Science.
 
 ---
@@ -35,12 +35,12 @@ A quantitative social research project measuring gender sensitization awareness 
 
 | | |
 |---|---|
-| 🎯 **70% sensitization rate** | ~70% of sampled Kanpur youth hold non-stereotypical gender attitudes |
-| 🏛️ **60% training gap** | 60% have never received formal gender-sensitization training |
-| 📊 **Two BI dashboards** | Power BI (7 pages) + Tableau (Overview + 6-point Story) |
-| 🤖 **1,000-row synthetic dataset** | Statistically mirrors published findings; ML/demo-ready |
-| 📐 **Star-schema data model** | Forward-compatible; drop-in ready for future row-level data |
-| 🔬 **Six thematic dimensions** | Awareness · Stereotypes · Roles · Equality · GBV · Demographics |
+| **70% sensitization rate** | ~70% of sampled Kanpur youth hold non-stereotypical gender attitudes |
+| **60% training gap** | 60% have never received formal gender-sensitization training |
+| **33 visualizations** | Chart-by-chart breakdown of every survey question plus thematic infographics |
+| **1,000-row synthetic dataset** | Statistically mirrors published findings; reproducible via a seeded generator script |
+| **Three-notebook pipeline** | Data cleaning → EDA → statistical analysis, in order |
+| **Six thematic dimensions** | Awareness · Stereotypes · Roles · Equality · GBV · Demographics |
 
 ---
 
@@ -60,19 +60,9 @@ A quantitative social research project measuring gender sensitization awareness 
 - 70% rejected the idea that women should tolerate violence to preserve a family
 - 63% believed gender-sensitization training reduces incidents of gender-based violence
 
-**Headline result:** H1 (youth are fairly sensitized) and H2 (institutional training is missing) are both supported. The fastest policy lever is structured curriculum and workplace programs — not attitude campaigns.
+**Headline result:** youth are fairly sensitized, but institutional training is largely missing. The fastest policy lever is structured curriculum and workplace programs — not attitude campaigns.
 
----
-
-## Dashboards
-
-| | Power BI | Tableau |
-|---|---|---|
-| File | `dashboards/powerbi/*.pbix` | `dashboards/tableau/*.twbx` |
-| Live link | *(add Publish-to-Web URL)* | *(add Tableau Public URL)* |
-| Structure | Cover · Demographics · Awareness · Stereotypes · Roles · Equality · GBV · Insights | Overview + 6-point narrative Story |
-
-Static exports: `dashboards/screenshots/` · Full design spec: [`dashboard_layout.md`](dashboard_layout.md)
+Full write-up: [`docs/key_findings.md`](docs/key_findings.md) · [`docs/executive_summary.md`](docs/executive_summary.md)
 
 ---
 
@@ -86,24 +76,25 @@ Static exports: `dashboards/screenshots/` · Full design spec: [`dashboard_layou
 | Sampling | Convenience + gender-stratified |
 | Target population | Youth aged 18–35, Kanpur |
 | Analysis | Frequency distribution · percentage analysis |
-| Visualization | Power BI · Tableau |
 | Demographics | 86% aged 18–25 · 53% male / 47% female · 66% graduates |
 
 *LGBTQIA+ respondents were not represented — acknowledged as a key limitation.*
 
+Full details: [`docs/methodology.md`](docs/methodology.md) · Survey instrument: [`docs/questionnaire.md`](docs/questionnaire.md)
+
 ---
 
-## ⚡ Quick start
+## Quick start
 
 ### Prerequisites
 - Python ≥ 3.9
-- Power BI Desktop or Tableau Desktop *(for dashboard files)*
+- Jupyter (for running the analysis notebooks)
 
 ### Installation
 
 ```bash
-git clone https://github.com/anshikagknp/gender-sensitization-study.git
-cd gender-sensitization-study
+git clone https://github.com/anshikagknp/gender-sensitization-survey-analysis.git
+cd gender-sensitization-survey-analysis
 
 python -m venv .venv
 source .venv/bin/activate          # macOS / Linux
@@ -112,18 +103,21 @@ source .venv/bin/activate          # macOS / Linux
 pip install -r requirements.txt
 ```
 
-### Run notebooks *(v1.1 — coming soon)*
+### Run the analysis notebooks
 
 ```bash
 jupyter lab
-# Open notebooks/ and run in order: 01 → 02 → 03
+# Open analysis/ and run in order:
+# 1. Data_Cleaning.ipynb
+# 2. EDA.ipynb
+# 3. Statistical_Analysis.ipynb
 ```
 
-### Regenerate synthetic dataset
+### Regenerate the synthetic dataset
 
 ```bash
-python data/synthetic/generate_dataset.py
-# Outputs: data/synthetic/synthetic_survey.csv (seed=42, deterministic)
+python data/generate_dataset.py
+# Outputs: data/synthetic_survey.csv (deterministic, seeded)
 ```
 
 ---
@@ -131,31 +125,35 @@ python data/synthetic/generate_dataset.py
 ## Repository structure
 
 ```
-gender-sensitization-study/
+gender-sensitization-survey-analysis/
 │
 ├── data/
-│   ├── processed/              # Aggregate data model (from published %s)
-│   └── synthetic/              # 1,000-row simulated dataset + generation script
+│   ├── generate_dataset.py     # Synthetic data generator (seeded, deterministic)
+│   └── synthetic_survey.csv    # 1,000-row simulated dataset
 │
-├── dashboards/
-│   ├── powerbi/                # .pbix + theme file
-│   ├── tableau/                # .twbx + Story
-│   └── screenshots/            # Static PNG exports
+├── analysis/
+│   ├── Data_Cleaning.ipynb
+│   ├── EDA.ipynb
+│   └── Statistical_Analysis.ipynb
 │
-├── notebooks/                  # Jupyter analysis (v1.1+)
-├── app/                        # Streamlit web app (v1.4+)
-├── docs/                       # Questionnaire + design specs
-├── report/                     # Full dissertation PDF
+├── visualizations/             # 33 chart & infographic PNGs
 │
-├── DATA.md                     # Data availability statement
-├── DATA_GENERATION.md          # Synthetic data methodology & disclaimer
-├── PROJECT_ARCHITECTURE.md     # Architecture + Mermaid data-flow diagram
-├── PROJECT_SHOWCASE.md         # Recruiter-facing portfolio summary
-├── ROADMAP.md                  # Planned features
-├── CHANGELOG.md
-├── CONTRIBUTING.md
+├── docs/
+│   ├── methodology.md
+│   ├── questionnaire.md
+│   ├── key_findings.md
+│   ├── executive_summary.md
+│   ├── architecture.md         # Project architecture & data flow
+│   ├── dashboard_spec.md       # Dashboard design spec
+│   └── research_paper_portfolio.pdf
+│
+├── assets/
+│   ├── repository_banner.png
+│   └── repository_logo.png
+│
 ├── requirements.txt
-└── CITATION.cff
+├── CITATION.cff
+└── LICENSE
 ```
 
 ---
@@ -163,12 +161,9 @@ gender-sensitization-study/
 ## Tech stack
 
 <p>
-  <img src="https://img.shields.io/badge/Google%20Forms-survey-7248B9?logo=googleforms&logoColor=white" alt="forms"/>
-  <img src="https://img.shields.io/badge/Excel-analysis-217346?logo=microsoftexcel&logoColor=white" alt="excel"/>
-  <img src="https://img.shields.io/badge/Power%20BI-dashboard-F2C811?logo=powerbi&logoColor=black" alt="powerbi"/>
-  <img src="https://img.shields.io/badge/Tableau-dashboard-E97627?logo=tableau&logoColor=white" alt="tableau"/>
-  <img src="https://img.shields.io/badge/Python-pandas%20%7C%20scikit--learn%20%7C%20plotly-3776AB?logo=python&logoColor=white" alt="python"/>
-  <img src="https://img.shields.io/badge/Streamlit-web%20app%20(planned)-FF4B4B?logo=streamlit&logoColor=white" alt="streamlit"/>
+  <img src="https://img.shields.io/badge/Google%20Forms-survey-lightgrey" alt="forms"/>
+  <img src="https://img.shields.io/badge/Python-pandas%20%7C%20matplotlib-lightgrey" alt="python"/>
+  <img src="https://img.shields.io/badge/Jupyter-notebooks-lightgrey" alt="jupyter"/>
 </p>
 
 ---
@@ -176,8 +171,8 @@ gender-sensitization-study/
 ## Ethical considerations
 
 - All 100 responses were collected with informed consent via an anonymous Google Form. No PII was ever collected.
-- The original response sheet has been permanently lost. Only published aggregate findings are represented here. See [`DATA.md`](DATA.md).
-- The 1,000-row synthetic dataset is clearly labelled as simulated and must not be cited as primary research evidence. See [`DATA_GENERATION.md`](DATA_GENERATION.md).
+- The original response sheet has been permanently lost. Only published aggregate findings are represented here.
+- The 1,000-row synthetic dataset is clearly labelled as simulated and must not be cited as primary research evidence.
 
 ---
 
@@ -186,10 +181,10 @@ gender-sensitization-study/
 ```bibtex
 @misc{gupta2024gendersensitization,
   author    = {Gupta, Anshika},
-  title     = {Perspectives on Gender Sensitization: A Kanpur-Based Comprehensive Study},
+  title     = {Perspectives on Gender Sensitization: A Kanpur-Based Quantitative Study},
   year      = {2024},
   publisher = {GitHub},
-  url       = {https://github.com/anshikagknp/gender-sensitization-study}
+  url       = {https://github.com/anshikagknp/gender-sensitization-survey-analysis}
 }
 ```
 
@@ -215,6 +210,5 @@ See [`CITATION.cff`](CITATION.cff) for the full machine-readable citation.
 
 ## Author
 
-**Anshika Gupta** — MA Political Science, Christ Church College, Kanpur (CSJM University)  
-GitHub: [@anshikagknp](https://github.com/anshikagknp)  
-*(Add LinkedIn / portfolio / email)*
+**Anshika Gupta** — MA Political Science, Christ Church College, Kanpur (CSJM University)
+GitHub: [@anshikagknp](https://github.com/anshikagknp)
