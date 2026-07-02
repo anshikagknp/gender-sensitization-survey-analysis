@@ -9,6 +9,7 @@
 </p>
 
 <p align="center">
+  <a href="https://anshikagknp.github.io/gender-sensitization-survey-analysis/research-paper.html">Read the Research Paper</a> ·
   <a href="docs/executive_summary.md">Executive Summary</a> ·
   <a href="docs/dashboard_spec.md">Dashboard Spec</a> ·
   <a href="docs/architecture.md">Architecture</a> ·
@@ -20,6 +21,8 @@
 ## What is this?
 
 A quantitative social research project measuring gender sensitization awareness among 100 young respondents (18–35) in Kanpur, India — restructured here as an **end-to-end data analytics case study**. Covers survey design → primary data collection → cleaning → exploratory and statistical analysis → visualization → key findings.
+
+📄 **[Read the full paper](https://anshikagknp.github.io/gender-sensitization-survey-analysis/research-paper.html)**
 
 ---
 
