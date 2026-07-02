@@ -9,20 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://anshikagknp.github.io/gender-sensitization-survey-analysis/research-paper.html">Read the Research Paper</a> ·
   <a href="docs/executive_summary.md">Executive Summary</a> ·
   <a href="docs/dashboard_spec.md">Dashboard Spec</a> ·
   <a href="docs/architecture.md">Architecture</a> ·
   <a href="#quick-start">Quick Start</a>
 </p>
-
----
-
-## What is this?
-
-A quantitative social research project measuring gender sensitization awareness among 100 young respondents (18–35) in Kanpur, India — restructured here as an **end-to-end data analytics case study**. Covers survey design → primary data collection → cleaning → exploratory and statistical analysis → visualization → key findings.
-
-📄 **[Read the full paper](https://anshikagknp.github.io/gender-sensitization-survey-analysis/research-paper.html)**
 
 ---
 
@@ -36,6 +27,14 @@ A quantitative social research project measuring gender sensitization awareness 
 | **1,000-row synthetic dataset** | Statistically mirrors published findings; reproducible via a seeded generator script |
 | **Three-notebook pipeline** | Data cleaning → EDA → statistical analysis, in order |
 | **Six thematic dimensions** | Awareness · Stereotypes · Roles · Equality · GBV · Demographics |
+
+---
+
+## What is this?
+
+An **end-to-end data analytics case study** that covers survey design → primary data collection → cleaning → exploratory and statistical analysis → visualization → key findings, built on a 100-respondent gender-sensitization survey from Kanpur, India (18–35 age group). Originally conducted as part of an MA Political Science thesis; restructured here into a full Python-based analytics pipeline and portfolio project.
+
+📄 **[Read the full paper](https://anshikagknp.github.io/gender-sensitization-survey-analysis/research-paper.html)**
 
 ---
 
