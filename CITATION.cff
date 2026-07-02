@@ -1,21 +1,21 @@
 cff-version: 1.2.0
-message: "If you use this dataset, dashboards, or methodology in your work, please cite as below."
+message: "If you use this dataset or methodology in your work, please cite as below."
 type: dataset
 title: "Perspectives on Gender Sensitization: A Kanpur-Based Comprehensive Study"
 abstract: >
   A quantitative social research project examining gender sensitization awareness,
   attitudes, and behaviour among 100 young respondents (ages 18–35) in Kanpur,
   India. Covers the full analytics lifecycle — survey design, primary data
-  collection, frequency analysis, BI dashboards (Power BI & Tableau), and
-  policy recommendations. Includes a 1,000-row synthetic dataset generated to
-  statistically mirror the published aggregate findings, released for analytics,
-  dashboarding, and ML demonstration purposes.
+  collection, data cleaning, exploratory and statistical analysis, and
+  visualization. Includes a 1,000-row synthetic dataset generated to
+  statistically mirror the published aggregate findings, released for analytics
+  and demonstration purposes.
 authors:
   - family-names: Gupta
     given-names: Anshika
     alias: anshikagknp
     affiliation: "Christ Church College, Kanpur (CSJM University)"
-repository-code: "https://github.com/anshikagknp/gender-sensitization-study"
+repository-code: "https://github.com/anshikagknp/gender-sensitization-survey-analysis"
 license: CC-BY-NC-4.0
 version: "1.0.0"
 date-released: "2024-01-01"
@@ -26,8 +26,6 @@ keywords:
   - kanpur
   - india
   - quantitative-research
-  - power-bi
-  - tableau
   - synthetic-data
   - data-analysis
 references:
