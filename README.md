@@ -2,7 +2,9 @@
 <p align="center">Quantitative Study on Python · Full Analytics Lifecycle</p>
 
 <p align="center">
-  <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg"(https://gender-sensitization-data-analysis.streamlit.app/)/>
+  <a href="https://gender-sensitization-data-analysis.streamlit.app/">
+  <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App"/>
+</a>
   <img src="https://img.shields.io/badge/sample%20size-n%3D100-lightblue" alt="sample"/>
   <img src="https://img.shields.io/badge/synthetic%20dataset-1%2C000%20rows-lightblue" alt="synthetic"/>
   <img src="https://img.shields.io/badge/Python-3.9%2B-lightblue" alt="python"/>
