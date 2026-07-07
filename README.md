@@ -37,7 +37,7 @@
 
 An **end-to-end data analytics case study** that covers survey design → primary data collection → cleaning → exploratory and statistical analysis → visualization → key findings, built on a 100-respondent gender-sensitization survey from Kanpur, India (18–35 age group). Originally conducted as part of an MA Political Science thesis; restructured here into a full Python-based analytics pipeline and portfolio project.
 
-📄 **[Read the full paper](https://anshikagknp.github.io/gender-sensitization-survey-analysis/research-paper.html)**
+📄 **[Read the full paper](https://anshikagknp.github.io/gender-sensitization-data-analysis/research-paper.html)**
 
 ---
 
